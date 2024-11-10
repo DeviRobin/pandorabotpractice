@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- how to make cards to improve user experience -->
+	
+	<category>
+	    <pattern>any pizza available ^</pattern> 	<!-- to say any single character after use *, for any character and space ^ -->
+	    <template>
+	        
+	        <card>
+	            <image>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/2880px-Pizza-3007395.jpg</image>
+	            <title>Supreme Pixxa</title>
+	            <subtitle>$14 + tax</subtitle>
+	            <button>
+	                <text>Order Now</text>
+	                <postback>VSOrder</postback>
+                </button>
+            </card>
+	        
+	    </template>
+    </category>
+	
+	<category>
+	    <pattern>VSOrder</pattern>
+	    <template>Supreme Pizza Order Please</template>
+    </category> 
+	
+	
+	
+	
+	
+</aiml>

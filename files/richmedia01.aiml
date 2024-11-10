@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+	
+	<!-- get to know me button -->
+	<category>
+	    <pattern>who are you</pattern>
+	    <template>
+	        Thank you for asking!
+            <button>
+                <text>get to know me</text>
+                <postback>knowme</postback>
+            </button>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>knowme</pattern>
+        <template>I am CareerBot! I was made to help you choose a job in computer science </template>
+    </category>
+    
+    <!-- URL button -->
+    
+    <category>
+        <pattern>WGU page</pattern>
+        <template>
+            The WGU webpage is a great resource to explore your degree
+            <button>
+                <text>Lets go to the WGU Computer Science Degree Page</text>
+                <url>https://www.wgu.edu/online-it-degrees/computer-science.html#transcriptPop</url>
+            </button>
+        </template>
+    </category>
+    
+    
+</aiml>

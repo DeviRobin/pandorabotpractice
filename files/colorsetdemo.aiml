@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- using a set -->
+	<category> <!-- this catagory will work as a default for all colors not in set -->
+	    <pattern>IS * a color</pattern>
+	    <template>No, <star/> is not a color</template>
+    </category>
+    
+    <category><!-- set funciton works as a wild card to see if anything entered is in set -->
+        <pattern>IS <set>colors</set> a color ^</pattern>
+        <template>Yes. <star/> is a color</template>
+    </category>
+    
+</aiml>

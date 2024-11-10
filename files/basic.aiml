@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>can you repeat that</pattern>
+	    <template><response index="1"></response></template>
+    </category>
+    
+    <category>
+        <pattern>I am a computer science student</pattern>
+        <template>are you enjoying your classes so far?</template>
+    </category>
+    
+    <category>
+        <pattern> yes </pattern>
+        <that>are you enjoying your classes so far</that>
+        <template>that is great to hear, there are many careers in the computer science field! </template>
+    </category>
+    
+    <category>
+        <pattern> no </pattern>
+        <that>are you enjoying your classes so far</that>
+        <template>I see, maybe we need to talk in person to determine how you want to proceed with you degree.</template>
+    </category>
+    
+</aiml>

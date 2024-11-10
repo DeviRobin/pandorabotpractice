@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>My name is *</pattern>
+	    <template>Thank you for using CareerBot <think><set name = "name"><star/></set></think></template>
+    </category>
+    
+    <category>
+        <pattern>What is my name</pattern>
+        <template>you are <get name="name"/></template>
+    </category>
+    
+</aiml>

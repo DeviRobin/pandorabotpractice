@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- this will insert images and videos -->
+	<category> <!-- URL should be under 336 characters  -->
+	    <pattern>PB Image</pattern>
+	    <template>
+	        <image>https://pbs.twimg.com/profile_images/929063592074256384/menjD8Zi_400x400.jpg</image>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>PB Video</pattern>  <!-- can support all videos supported by html  -->
+        <template>
+            <video>https://www.pexels.com/video/video-of-a-robot-dancing-8087012/</video>
+        </template>
+    </category>
+    
+</aiml>

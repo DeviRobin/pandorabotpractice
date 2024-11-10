@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- how to use substitution files, used to normalize pronouns, gender, names etc-->
+	
+	<category>
+	    <pattern>this cat is *</pattern> 	<!-- extract the name from sentence and normalize,ex this cat is charlie's -->
+	    <template><normalize><input/></normalize></template>
+    </category>
+    
+    <category>
+        <pattern>say *</pattern> <!-- does the opposite of normalize -->
+        <template><denormalize><star/></denormalize></template>
+    </category>
+	
+	
+	
+	
+</aiml>

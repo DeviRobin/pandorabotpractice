@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- many cards in a carousel -->
+	
+	<category>
+	    <pattern> ^ pizza menu ^</pattern>
+	    <template>
+	        
+	        <carousel>
+	            <card>
+	                <image>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/2880px-Pizza-3007395.jpg</image>
+	                <title>Supreme Pizza</title>
+	                <subtitle>$14 + tax</subtitle>
+	                <button>
+	                    <text>Order Now</text>
+	                    <postback>VSOrder</postback>
+                    </button>
+                    </card>
+                    <card>
+                        <image>https://atsloanestable.com/wp-content/uploads/2023/06/new-york-style-pizza2-500x500.jpg</image>
+                        <title>Pepp Pizza</title>
+                        <subtitle>$14 + tax</subtitle>
+	                <button>
+	                    <text>Order Now</text>
+	                    <postback>PPOrder</postback>
+                    </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+	
+	<category>
+	    <pattern>VSOrder</pattern>
+	    <template>Supreme Pizza Ordered</template>
+    </category> 
+	
+	<category>
+	    <pattern>PPOrder</pattern>
+	    <template>Pepp Pizza Ordered</template>
+    </category> 
+	
+</aiml>
